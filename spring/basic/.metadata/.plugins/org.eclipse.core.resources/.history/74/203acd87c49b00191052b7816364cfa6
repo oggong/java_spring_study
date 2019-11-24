@@ -1,0 +1,8 @@
+package aop3_xml.annotation;
+
+public interface MessageBean {
+
+	void sayHello();
+	void engSayHello();
+	void test();
+}

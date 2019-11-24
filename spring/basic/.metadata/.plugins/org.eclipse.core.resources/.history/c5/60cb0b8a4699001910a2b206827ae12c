@@ -1,0 +1,9 @@
+package ex0_pojo;
+
+public class MessageBeanKoImpl implements MessageBean {
+
+	public void sayHello(String name) {
+
+	}
+
+}

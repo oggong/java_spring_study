@@ -1,0 +1,13 @@
+package example.member.controller;
+
+import org.springframework.stereotype.Controller;
+
+@Controller
+public class RequesetMappingController {
+	
+	@RequestMapping("/re/request.do")
+	public void request() {
+		
+	}
+
+}

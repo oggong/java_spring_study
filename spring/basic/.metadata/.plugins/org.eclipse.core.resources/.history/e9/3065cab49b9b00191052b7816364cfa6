@@ -1,0 +1,9 @@
+package ex3_autowired;
+
+import java.io.IOException;
+
+public interface Outputer {
+	public vodi writeMessage(String msg) throws IOException{}
+	
+	}
+}

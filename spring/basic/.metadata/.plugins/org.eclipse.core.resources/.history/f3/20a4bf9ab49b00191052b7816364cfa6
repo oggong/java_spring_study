@@ -1,0 +1,10 @@
+package aop2_xml.order;
+
+import org.aspectj.lang.JoinPoint;
+
+public class LoggingSample {
+	
+	public void before(JoinPointnt p) {
+		System.out.println("before~~~~" + p);
+	}
+}

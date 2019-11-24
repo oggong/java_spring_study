@@ -1,0 +1,14 @@
+package example.member.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class RequesetMappingController {
+	
+	@RequestMapping("/re/request.do")
+	public void request() {
+		System.out.println("re/reqeust.do 요청");
+	}
+
+}

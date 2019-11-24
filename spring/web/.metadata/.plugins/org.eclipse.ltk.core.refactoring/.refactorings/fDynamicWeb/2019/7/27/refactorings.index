@@ -1,0 +1,7 @@
+1562038079893	Move 'start.jsp' to 'WebContent'
+1562038297683	Move 'web.xml' to 'WEB-INF'
+1562038910781	Move 'view' to 'WEB-INF'
+1562045694530	Copy compilation unit
+1562045699012	Delete element
+1562046610931	Rename resource 'autoScan.jsp'
+1562047275622	Rename resource '02_ReqeustMapping.jsp'

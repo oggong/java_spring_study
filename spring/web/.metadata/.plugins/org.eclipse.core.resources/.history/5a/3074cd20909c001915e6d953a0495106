@@ -1,0 +1,18 @@
+package example.member.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import example.member.model.MemberVO;
+
+@Controller
+@RequestMapping("/re")
+public class RequesetMappingController {
+	
+	@RequestMapping("/re/request.do")
+	public void request(MemberVO vo) {
+		System.out.println("re/reqeust.do 요청");
+		System.out.println(vo.getName()":입력확인");
+	}
+
+}

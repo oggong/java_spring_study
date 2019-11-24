@@ -1,0 +1,13 @@
+package ex3_autowired;
+
+import ex0_pojo.MessageBean;
+
+public class MessageBeanImpl implements MessageBean {
+
+	@Override
+	public void sayHello(String name) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

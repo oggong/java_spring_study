@@ -1,0 +1,32 @@
+package ex3_autowired;
+
+import java.io.IOException;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+public class MessageBeanImpl implements MessageBean {
+	private String name;
+	private String message;
+	
+	@Autowired
+	private Outputer out;
+	// 값 지정 - 생성자 or setter
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public void setMessage(String message) {
+		this.message = message;
+	}
+
+	public void sayHello(String name) {
+		System.out.println(name + "" + message);
+		try {
+			out.writeMessage(name+ "님께" + message);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+	public void sayHello() {}
+}

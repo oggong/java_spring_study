@@ -1,0 +1,44 @@
+package com.javassem.controller;
+
+import java.util.Date;
+
+import javax.servlet.http.HttpSession;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.validation.Errors;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.servlet.ModelAndView;
+
+import com.javassem.dao.MemberDAO;
+import com.javassem.domain.MemberVO;
+
+@Controller
+@RequestMapping("/user/") 
+
+public class MemberController {
+	
+		// user/userJoin.do 요청일 경우 user/userJoin.jsp 뷰를 지정하기
+		
+	// 메서드 생성
+	//@RequestMapping("/userJoin.do")
+	//public void common() {	
+	//}
+	
+	@RequestMapping(value="{url}.do")
+	public String common(@PathVariable String url) {
+		
+		return "/user/"+url;
+		// 경로 맞춰주기
+	}
+	
+	@RequestMapping("userInsert.do")
+	public void insert() {
+		
+	}
+	
+	//요청된 값으로 연결
+	//db를 갔다오지 않는 것들 통일되어있다?
+}

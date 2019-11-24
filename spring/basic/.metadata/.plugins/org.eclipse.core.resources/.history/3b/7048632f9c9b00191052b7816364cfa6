@@ -1,0 +1,15 @@
+package ex3_autowired;
+
+import java.io.IOException;
+
+public class OutputerImpl implements Outputer {
+	private String path;
+	// 값 지정 - 생성자 or setter
+	
+	public void setPath(String path) {
+		
+	}
+	@Override
+	public void writeMessage(String msg) throws IOException{}
+		
+}

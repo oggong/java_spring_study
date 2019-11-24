@@ -1,0 +1,28 @@
+package ex3_autowired;
+
+import ex0_pojo.MessageBean;
+
+public class MessageBeanImpl implements MessageBean {
+	private String name;
+	private String message;
+	// 값 지정 - 생성자 or setter
+	
+	
+	public void sayHello(String name) {
+		
+	}
+
+	
+	public void setName(String name) {
+		this.name = name;
+	}
+
+
+	public void setMessage(String message) {
+		this.message = message;
+	}
+
+	public void sayHello() {
+		System.out.println(name + "" message);
+	}
+}

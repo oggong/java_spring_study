@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="user">
+	<!-- 마이바티스 설정파일의 별칭을 불러오기 -->
+	<!-- 마이바티스에서 typealias 로 member라는 별칭 지정 -->
+
+	<insert id="userInsert" parameterType="member">
+		INSERT INTO MEMBER2 VALUES(#{userId},#{userPass},#{userName})
+	</insert>
+
+	<!-- #{} : PreparedStatement를 이용하여 문자열인 경우 '' 자동 -->
+	<!-- ${} : Statement를 이용하여 '' 자동으로 부여되지 않음 (컬럼명인 경우) -->
+
+</mapper>

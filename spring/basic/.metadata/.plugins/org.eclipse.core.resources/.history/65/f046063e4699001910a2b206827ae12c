@@ -1,0 +1,5 @@
+package ex0_pojo;
+
+public class MessageBeanImpl {
+
+}

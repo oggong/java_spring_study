@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.3.xsd">
+<!-- target 빈 객체 생성  -->
+<bean id='targetBean' class="aop_1_xml.MessageBeanImpl"/>
+
+<!--advice 객체 생성 -->
+<bean id='adivce' class="aop_1_xml.LogginAdvice"/>
+
+<!-- aop 설정 -->
+	<aop:config>
+	<aop:pointcut expression="execution(public * aop_1_xml.*.*Hello(..))" id="pointCut"/>
+	<aop:aspect id='aspect' ref='advice'>
+			<aop:around method="around" pointcut-ref="pointCut"/>
+		</aop:aspect>
+	</aop:config>
+</beans>
